@@ -237,6 +237,44 @@ body {
     font-size: 12px;
 }
 
+/* Generic lists for ATS-friendly parsing */
+.list {
+    list-style: disc inside;
+    display: block;
+    padding-left: 0;
+    margin: 0;
+    color: #2c3e50;
+}
+
+.list li {
+    margin-bottom: 6px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.list.columns {
+    columns: 2;
+    column-gap: 20px;
+}
+
+/* Inline contact block under header */
+.contact-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    justify-content: center;
+    margin-top: 10px;
+    font-style: normal;
+    z-index: 2;
+    position: relative;
+}
+
+.contact-inline span,
+.contact-inline a {
+    font-size: 12px;
+    color: #2c3e50;
+}
+
 /* Contact Section */
 .contact-info {
     display: flex;
@@ -620,7 +658,7 @@ body {
         padding: 0;
         margin: 0;
         border: none;
-        background: #1a1a1a;
+        background: #ffffff;
     }
     
     .header {
@@ -629,8 +667,8 @@ body {
     }
     
     .main-content {
-        display: grid;
-        grid-template-columns: 1fr 1.6fr;
+        display: flex;
+        flex-direction: column;
         gap: 0;
     }
     
@@ -643,6 +681,10 @@ body {
     .right-column {
         padding: 15px 10px;
     }
+
+    /* Ensure Experience/Summary are read first in print/PDF for ATS */
+    .right-column { order: 1; }
+    .left-column { order: 2; }
     
     .section {
         margin-bottom: 15px;
@@ -687,6 +729,16 @@ body {
     .tech-tag {
         font-size: 7px;
         padding: 2px 4px;
+    }
+
+    /* Force single-column lists for clarity in print/ATS */
+    .list.columns {
+        columns: 1 !important;
+    }
+
+    /* Disable animations in print */
+    .section-title {
+        animation: none !important;
     }
 }
 

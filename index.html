@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruslan Nikolov - Frontend Developer & UI/UX Designer</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <meta name="description" content="Frontend Developer and UI/UX Designer with 7+ years experience in React, TypeScript, Next.js, performance optimization, and accessible, responsive interfaces.">
 </head>
 <body>
     <div class="container">
@@ -13,12 +13,20 @@
             <!-- Header Section -->
             <header class="header">
                 <button class="print-button" onclick="window.print()">Print / Save PDF</button>
+                <button class="print-button" style="right: 140px;" id="downloadTxtBtn" aria-label="Download plain text resume">Download TXT</button>
                 <div class="profile-picture">
                     <img src="Ruslan Looking Avatar.jpg" alt="Ruslan Looking Avatar" class="profile-img">
                 </div>
                 <h1 class="name">RUSLAN NIKOLOV</h1>
                 <h2 class="title">FRONTEND DEVELOPER & UI/UX DESIGNER</h2>
                 <h3 class="subtitle">Electronic Music Producer</h3>
+                <address class="contact-inline">
+                    <span>Phone: +359 876 907 337</span>
+                    <span>Email: <a href="mailto:ruslannikolov1@gmail.com">ruslannikolov1@gmail.com</a></span>
+                    <span>Location: Burgas, Bulgaria</span>
+                    <span>Portfolio: <a href="https://portfolio-website-dusky-five-28.vercel.app/" target="_blank">portfolio-website-dusky-five-28.vercel.app</a></span>
+                    <span>LinkedIn: <a href="https://www.linkedin.com/in/ruslan-nikolov-721413355" target="_blank">www.linkedin.com/in/ruslan-nikolov-721413355</a></span>
+                </address>
             </header>
 
             <!-- Main Content Area -->
@@ -27,105 +35,92 @@
                 <div class="left-column">
                     <!-- Contact Section -->
                     <section class="section">
-                        <h3 class="section-title">CONTACT</h3>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <i class="fas fa-phone contact-icon"></i>
-                                <span>+359 876 907 337</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-envelope contact-icon"></i>
-                                <span>ruslannikolov1@gmail.com</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-map-marker-alt contact-icon"></i>
-                                <span>Burgas, Bulgaria</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-globe contact-icon"></i>
-                                <a href="https://portfolio-website-dusky-five-28.vercel.app/" target="_blank" class="contact-link">Portfolio Website</a>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fab fa-linkedin contact-icon"></i>
-                                <a href="https://linkedin.com/in/ruslan-nikolov-721413355" target="_blank" class="contact-link">LinkedIn</a>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fab fa-soundcloud contact-icon"></i>
-                                <a href="https://soundcloud.com/ruslan-nikolov-323139497" target="_blank" class="contact-link">SoundCloud</a>
-                            </div>
-                        </div>
+                        <h3 class="section-title">Contact</h3>
+                        <ul class="list">
+                            <li><strong>Phone:</strong> +359 876 907 337</li>
+                            <li><strong>Email:</strong> <a href="mailto:ruslannikolov1@gmail.com" class="contact-link">ruslannikolov1@gmail.com</a></li>
+                            <li><strong>Location:</strong> Burgas, Bulgaria</li>
+                            <li><strong>Portfolio:</strong> <a href="https://portfolio-website-dusky-five-28.vercel.app/" target="_blank" class="contact-link">portfolio-website-dusky-five-28.vercel.app</a></li>
+                            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ruslan-nikolov-721413355" target="_blank" class="contact-link">www.linkedin.com/in/ruslan-nikolov-721413355</a></li>
+                            <li><strong>SoundCloud:</strong> <a href="https://soundcloud.com/ruslan-nikolov-323139497" target="_blank" class="contact-link">soundcloud.com/ruslan-nikolov-323139497</a></li>
+                        </ul>
+                    </section>
+
+                    <!-- Core Competencies / Keywords Section -->
+                    <section class="section">
+                        <h3 class="section-title">Core Competencies</h3>
+                        <ul class="list">
+                            <li>Frontend Development, UI/UX Design, Design Systems, Component Libraries</li>
+                            <li>React, Next.js, TypeScript, JavaScript (ES6+), Redux, React Router</li>
+                            <li>REST APIs, GraphQL, Axios, Node.js, Express</li>
+                            <li>Accessibility (WCAG 2.1), Responsive Design, Cross-browser Compatibility</li>
+                            <li>Performance Optimization, Code Splitting, Lazy Loading</li>
+                            <li>Testing (Jest, React Testing Library), CI/CD (GitHub Actions, Jenkins)</li>
+                            <li>Webpack, Vite, Tailwind CSS, SASS/SCSS, Material UI</li>
+                            <li>Agile/Scrum, Stakeholder Communication, Mentoring & Leadership</li>
+                        </ul>
                     </section>
 
                     <!-- Technical Skills Section -->
                     <section class="section">
-                        <h3 class="section-title">TECHNICAL SKILLS</h3>
-                        <div class="skills-container">
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Next.js</span>
-                            <span class="skill-tag">TypeScript</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">HTML/CSS</span>
-                            <span class="skill-tag">React Router</span>
-                            <span class="skill-tag">Axios</span>
-                            <span class="skill-tag">Redux</span>
-                            <span class="skill-tag">REST API</span>
-                            <span class="skill-tag">GraphQL</span>
-                            <span class="skill-tag">Tailwind</span>
-                            <span class="skill-tag">SASS</span>
-                            <span class="skill-tag">Material UI</span>
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">CI/CD</span>
-                            <span class="skill-tag">Webpack</span>
-                            <span class="skill-tag">Vite</span>
-                            <span class="skill-tag">Mapbox</span>
-                            <span class="skill-tag">Web Audio API</span>
-                            <span class="skill-tag">AI-assisted Development</span>
-                        </div>
+                        <h3 class="section-title">Technical Skills</h3>
+                        <ul class="list columns">
+                            <li>React</li>
+                            <li>Next.js</li>
+                            <li>TypeScript</li>
+                            <li>JavaScript</li>
+                            <li>Node.js</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>React Router</li>
+                            <li>Redux</li>
+                            <li>Axios</li>
+                            <li>REST API</li>
+                            <li>GraphQL</li>
+                            <li>Tailwind CSS</li>
+                            <li>SASS</li>
+                            <li>Material UI</li>
+                            <li>Git</li>
+                            <li>CI/CD</li>
+                            <li>Webpack</li>
+                            <li>Vite</li>
+                            <li>Mapbox</li>
+                            <li>Web Audio API</li>
+                            <li>AI-assisted Development</li>
+                        </ul>
                     </section>
 
                     <!-- Soft Skills Section -->
                     <section class="section">
-                        <h3 class="section-title">SOFT SKILLS</h3>
-                        <div class="skills-container">
-                            <span class="skill-tag">Client-focused problem solving</span>
-                            <span class="skill-tag">Leadership and mentoring</span>
-                            <span class="skill-tag">Effective communication</span>
-                            <span class="skill-tag">Strategic project planning</span>
-                            <span class="skill-tag">Communication & Collaboration</span>
-                            <span class="skill-tag">Problem-Solving & Critical Thinking</span>
-                            <span class="skill-tag">Adaptability & Continuous Learning</span>
-                            <span class="skill-tag">Time Management & Prioritization</span>
-                            <span class="skill-tag">Attention to Detail</span>
-                            <span class="skill-tag">Empathy & User-Centric Mindset</span>
-                            <span class="skill-tag">Collaboration in Agile Teams</span>
-                            <span class="skill-tag">Mentorship & Knowledge Sharing</span>
-                        </div>
+                        <h3 class="section-title">Soft Skills</h3>
+                        <ul class="list">
+                            <li>Client-focused problem solving</li>
+                            <li>Leadership and mentoring</li>
+                            <li>Effective communication</li>
+                            <li>Strategic project planning</li>
+                            <li>Collaboration in Agile teams</li>
+                            <li>Problem-solving and critical thinking</li>
+                            <li>Adaptability and continuous learning</li>
+                            <li>Time management and prioritization</li>
+                            <li>Attention to detail</li>
+                            <li>User-centric mindset</li>
+                            <li>Mentorship and knowledge sharing</li>
+                        </ul>
                     </section>
 
                     <!-- Languages Section -->
                     <section class="section">
-                        <h3 class="section-title">LANGUAGES</h3>
-                        <div class="languages">
-                            <div class="language-item">
-                                <i class="fas fa-globe language-icon"></i>
-                                <span>English (Fluent)</span>
-                            </div>
-                            <div class="language-item">
-                                <i class="fas fa-globe language-icon"></i>
-                                <span>Bulgarian (Fluent)</span>
-                            </div>
-                            <div class="language-item">
-                                <i class="fas fa-globe language-icon"></i>
-                                <span>Russian (Basic)</span>
-                            </div>
-                        </div>
+                        <h3 class="section-title">Languages</h3>
+                        <ul class="list">
+                            <li>English — Fluent</li>
+                            <li>Bulgarian — Fluent</li>
+                            <li>Russian — Basic</li>
+                        </ul>
                     </section>
 
                     <!-- Electronic Music Section -->
                     <section class="section electronic-music">
                         <div class="music-header">
-                            <i class="fas fa-music music-icon"></i>
                             <h4 class="music-title">Electronic Music</h4>
                         </div>
                         <p class="music-description">
@@ -135,7 +130,7 @@
 
                     <!-- Education Section -->
                     <section class="section">
-                        <h3 class="section-title">EDUCATION</h3>
+                        <h3 class="section-title">Education</h3>
                         <div class="education-timeline">
                             <div class="education-item">
                                 <div class="education-year">2016-2018</div>
@@ -164,9 +159,9 @@
 
                 <!-- Right Column -->
                 <div class="right-column">
-                    <!-- Profile Section -->
+                    <!-- Summary Section -->
                     <section class="section">
-                        <h3 class="section-title">PROFILE</h3>
+                        <h3 class="section-title">Summary</h3>
                         <p class="section-content">
                             Frontend developer with more than 7 years of experience blending performance engineering with sleek, intuitive UX. I build applications that are fast, scalable, and engaging, ensuring every product feels modern, polished, and reliable. Skilled in leading projects from concept to deployment, integrating cutting-edge technologies and AI-assisted development for optimal results.
                         </p>
@@ -174,7 +169,7 @@
 
                     <!-- Work Experience Section -->
                     <section class="section">
-                        <h3 class="section-title">WORK EXPERIENCE</h3>
+                        <h3 class="section-title">Work Experience</h3>
                 
                         <div class="experience-item">
                             <div class="experience-header">
@@ -264,7 +259,7 @@
                                 <li>Optimized rendering performance and refactored legacy code.</li>
                                 <li>Wrote SASS CSS and implemented responsive design.</li>
                                 <li>Performed cross-browser development and error handling.</li>
-                                <li>Created comprehensive unit tests.</li>
+                                
                                 <li>Contributed to React PDF Library and implemented ANTLR-based formula parsing.</li>
                             </ul>
                         </div>
@@ -314,5 +309,29 @@
             </div>
         </div>
     </div>
+    <script>
+    (function() {
+        var btn = document.getElementById('downloadTxtBtn');
+        if (btn) {
+            btn.addEventListener('click', function() {
+                try {
+                    var source = document.querySelector('.resume');
+                    var text = source ? source.innerText : document.body.innerText;
+                    var blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+                    var url = URL.createObjectURL(blob);
+                    var a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'Ruslan-Nikolov-Resume.txt';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                } catch (e) {
+                    alert('Could not generate text version. Please use Print to save as PDF.');
+                }
+            });
+        }
+    })();
+    </script>
 </body>
 </html>
